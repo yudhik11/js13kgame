@@ -1,7 +1,6 @@
 <!DOCTYPE Html>
 
 <html>
-
 <head>
     <title>
         Lost Colors
@@ -190,10 +189,10 @@
             x.style.backgroundColor = arrname[(arr[rand] + 5) % 6];
             x.style.textAlign = "center"
             doc.appendChild(x);
-
             doc.appendChild(document.createElement('hr'));
             doc.innerHTML += "<br><br><br><br>";
             grid = document.createElement('table');
+            
             var tr = grid.appendChild(document.createElement('tr'));
             var x = document.createElement('button');
             x.className = "btn";
@@ -206,7 +205,6 @@
                 btncall();
                 console.log(callcolor);
             });
-
 
             var x = document.createElement('button');
             x.className = "btn"
@@ -304,7 +302,7 @@
                 if (width <= 0) {
                     elem.style.width = 0 + '%';
                     width = 0;
-                    alert('you lost');
+                    alert('play again as loosing is not an option');
                 } else elem.style.width = width + '%';
             }
             mainfunc();
